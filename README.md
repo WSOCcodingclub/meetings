@@ -15,8 +15,20 @@ First day back after Christmas Break.  The meeting is on for those who can make 
 
 * Vi via vim
 
-* Microsoft [visual studio code](https://hub.docker.com/r/jess/vscode/)
+* Microsoft [visual studio code](https://code.visualstudio.com/Download).  Alternate Docker setup [here](https://hub.docker.com/r/jess/vscode/) but that's to complicated.
 
 ### What's a for loop for?
 
 Go over a for loop.  Try to sort something. [Tutorial link](https://tutorial.djangogirls.org/en/python_introduction/#loops).  Python [docs link](https://docs.python.org/3/reference/compound_stmts.html#the-for-statement)
+
+## Jan 22 Meeting
+
+First day back after yet another break!
+
+* Make sure laptops all have VSCode (see link above)
+* Make sure laptops are all running Docker, etc etc
+* load up the simple for loop program from last time ([Tutorial link](https://tutorial.djangogirls.org/en/python_introduction/#loops)).
+
+### Sorting a list
+
+Today we're going to sort that list of names that we displayed in the old program.  This will teach lots of small but important aspects of programming, including `if` statements, temporary variables, looping, and so on.
