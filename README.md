@@ -26,7 +26,7 @@ Go over a for loop.  Try to sort something. [Tutorial link](https://tutorial.dja
 First day back after yet another break!
 
 * Make sure laptops all have VSCode (see link above)
-* Make sure laptops are all running Docker, etc etc
+* Make sure laptops are all running Docker, etc etc, and have the sample project loaded (https://github.com/WSOCcodingclub/django_docker)
 * load up the simple for loop program from last time ([Tutorial link](https://tutorial.djangogirls.org/en/python_introduction/#loops)).
 
 ### Sorting a list
