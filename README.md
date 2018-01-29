@@ -40,3 +40,43 @@ Today we're going to sort that list of names that we displayed in the old progra
     
 Think about how you would alphabetically sort that list in your head.  Try to write down exactly what your brain is doing.  That is an algorithm.  We'll turn that algorithm into code, and then see how well it does.
 
+## Jan 29 2018
+
+Last time was just Catherine, so maybe we should repeat!
+
+Go get Catherine's progress from last time, as follows:
+
+1. change into the folder with django_docker on your computer.  Probably just doing `cd django_docker` will work.
+2. add Catherine's repository as a new source:
+```
+git remote add seagulsong https://github.com/seagulsong/Docker-Python
+```
+3. "fetch" Catherine's changes:
+```
+git fetch seagulsong
+```
+4. create a new branch in git for today's work.  
+```
+git checkout -b sort_array
+```
+The "checkout" command will switch to an existing branch, and the "-b" flag tells git to make a new branch if it doesn't already exist.
+5. merge Catherine's latest change with your code by "cherry-picking" her most recent commit.  First inspect Catherine's logs to find the right commit number. Then run the cherry-pick command to apply just that commit to your code.
+```
+git log seagulsong/master
+```
+
+(Copy the commit number that you see in the log.  It will look like a long string of letters and numbers, like "ac925feeef8a...")
+
+```
+git cherry-pick [that long string of letters and numbers]
+```
+
+The output should be:
+
+```
+] sorting program
+ Author: WSOCHS Student <wsochsstudent@WSOCHS4s-MacBook-Pro.local>
+ Date: Mon Jan 22 16:11:46 2018 -0800
+ 1 file changed, 16 insertions(+)
+ create mode 100644 sortinglist.py
+```
