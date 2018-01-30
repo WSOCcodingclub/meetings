@@ -74,9 +74,34 @@ git cherry-pick [that long string of letters and numbers]
 The output should be:
 
 ```
-] sorting program
+ sorting program
  Author: WSOCHS Student <wsochsstudent@WSOCHS4s-MacBook-Pro.local>
  Date: Mon Jan 22 16:11:46 2018 -0800
  1 file changed, 16 insertions(+)
  create mode 100644 sortinglist.py
 ```
+
+### Meeting notes
+
+#### New laptops
+
+Pia noted that 20 through 25 have Docker, git, and visual studio code installed.
+
+#### UNIX commands
+
+We used `cd`, `ls`, `ls -lrt`, `ls -lrta`, `ls -lR .git`
+
+#### git commands
+
+We used `git commit -a`, `git status`, `git checkout sortinglist.py` to erase our work, 
+`git remote add <name> <url>`, `git fetch`, `git cherry-pick`, and maybe some others.
+
+#### python code
+
+We used a for loop, and if statement, and comparison of strings using < (less than).  
+We also wrote an infinite loop by having the hi() function call itself (recursion).
+
+#### ToDo items
+
+[ ] bug the club members who haven't been coming to come.  
+[ ] ask Lauren to add Emma K (username?), maybe others, to the WSOCcodingclub group
