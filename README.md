@@ -103,5 +103,5 @@ We also wrote an infinite loop by having the hi() function call itself (recursio
 
 #### ToDo items
 
-[ ] bug the club members who haven't been coming to come.  
-[ ] ask Lauren to add Emma K (username?), maybe others, to the WSOCcodingclub group
+- [ ] bug the club members who haven't been coming to come.  
+- [ ] ask Lauren to add Emma K (username?), maybe others, to the WSOCcodingclub group
