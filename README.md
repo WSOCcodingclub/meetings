@@ -118,6 +118,8 @@ git clone https://github.com/jmarca/jupyter_notebook_intro
 
 Then switch into the newly created directory called "jupyter_notebook_intro" and read the README.
 
-Do the docker build step, but be warned, it takes a while to download.  Maybe just do it on two or three machines and pair program.
+Do the docker build step, but be warned, it takes a while to download. **Correction** See about copying from the USB flash drive to speed things up. If that doesn't work, then it might be faster to just do it on two or three machines and pair program.  
+
+Saving a docker image to an output file is `docker image save -o <save image to path> <image name>`, while loading it back again on the target computer is `docker image load -i <path to image tar file>`.
 
 Launch the notebook, and follow along.
