@@ -105,3 +105,19 @@ We also wrote an infinite loop by having the hi() function call itself (recursio
 
 - [ ] bug the club members who haven't been coming to come.  
 - [ ] ask Lauren to add Emma K (username?), maybe others, to the WSOCcodingclub group
+
+# February 5, 2018
+
+Jupyter notebooks today...maybe
+
+Clone this repository: https://github.com/jmarca/jupyter_notebook_intro
+
+```
+git clone https://github.com/jmarca/jupyter_notebook_intro
+```
+
+Then switch into the newly created directory called "jupyter_notebook_intro" and read the README.
+
+Do the docker build step, but be warned, it takes a while to download.  Maybe just do it on two or three machines and pair program.
+
+Launch the notebook, and follow along.
