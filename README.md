@@ -126,7 +126,7 @@ Launch the notebook, and follow along.
 
 # February 26, 2018 
 
-First day back after ski week :snow: :skier: :snow: :snowboarder: :snow: 
+First day back after ski week :snowflake: :skier: :snowflake: :snowboarder: :snowflake: 
 
 ## Libraries:  os, glob, time
 
