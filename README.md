@@ -123,3 +123,40 @@ Do the docker build step, but be warned, it takes a while to download. **Correct
 Saving a docker image to an output file is `docker image save -o <save image to path> <image name>`, while loading it back again on the target computer is `docker image load -i <path to image tar file>`.
 
 Launch the notebook, and follow along.
+
+# February 26, 2018 
+
+First day back after ski week :snow: :skier: :snow: :snowboarder: :snow: 
+
+## Libraries:  os, glob, time
+
+What are they good for?
+
+```
+os
+os.getcwd()
+os.chdir()
+os.path.join()
+os.path.split()
+os.path.splittext()
+os.path.real.path()
+os.path.exapnduser('~')
+os.stat()
+
+time
+time.localtime()
+
+glob
+glob.glob()
+```
+
+What does time look like for a computer program?
+
+What is a globbing pattern?
+
+
+## Lists, dicts, and sets
+
+What are they, how are they used?
+
+A unique feature to python is list comprehension (and dictionary comprehension)  (and set comprehension).
