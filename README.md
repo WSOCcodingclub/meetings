@@ -167,4 +167,18 @@ Back to Django Girls Tutorial!
 
 With the some python basics, time to get back to making a website.  
 
-Earlier we covered up to <https://tutorial.djangogirls.org/en/django_start_project/>, but remember we did it using Docker.  Today, fire up the terminal, change into the django project directory, and then open a browswer window to <https://tutorial.djangogirls.org/en/django_models/>
+Earlier we covered up to <https://tutorial.djangogirls.org/en/django_start_project/>, but remember we did it using Docker.  
+
+Today let's repeat that, but with the djangogirls words.
+
+Fire up the terminal, change into the django project directory, and then run something like:
+
+```
+docker-compose run web bash
+```
+
+to get a bash prompt inside the docker environment.
+
+Then open a browswer window to <https://tutorial.djangogirls.org/en/django_start_project/>.
+
+After that work is done, move on to making models at <https://tutorial.djangogirls.org/en/django_models/>
