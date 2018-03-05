@@ -160,3 +160,11 @@ What is a globbing pattern?
 What are they, how are they used?
 
 A unique feature to python is list comprehension (and dictionary comprehension)  (and set comprehension).
+
+# March 5, 2018
+
+Back to Django Girls Tutorial!
+
+With the some python basics, time to get back to making a website.  
+
+Earlier we covered up to <https://tutorial.djangogirls.org/en/django_start_project/>, but remember we did it using Docker.  Today, fire up the terminal, change into the django project directory, and then open a browswer window to <https://tutorial.djangogirls.org/en/django_models/>
