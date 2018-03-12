@@ -161,17 +161,27 @@ What are they, how are they used?
 
 A unique feature to python is list comprehension (and dictionary comprehension)  (and set comprehension).
 
-# March 5, 2018
+# ~March 5~ March 12, 2018
 
 Back to Django Girls Tutorial!
 
-With the some python basics, time to get back to making a website.  
+With some python basics under our belt, time to get back to making a website.  
 
-Earlier we covered up to <https://tutorial.djangogirls.org/en/django_start_project/>, but remember we did it using Docker.  
+## Open up the terminal
 
-Today let's repeat that, but with the djangogirls words.
+Open the terminal program, and `cd` into the `django_docker` directory (or folder, if you prefer).  Fire up the docker environment by running 
 
-Fire up the terminal, change into the django project directory, and then run something like:
+```
+docker-compose up
+```
+
+This creates containers for a database and for the python website.
+
+## Create a django website---again
+
+Earlier we created a simple django website, but we did it using the django-docker tutorial.  Now we are going to do the same thing but with the Django Girls tutorial at <https://tutorial.djangogirls.org/en/django_start_project/>.
+
+Open up a new terminal tab or window (Command-t might work, otherwise click on the menus and look for new tab)
 
 ```
 docker-compose run web bash
@@ -179,6 +189,70 @@ docker-compose run web bash
 
 to get a bash prompt inside the docker environment.
 
-Then open a browswer window to <https://tutorial.djangogirls.org/en/django_start_project/>.
+Then open a browswer window to <https://tutorial.djangogirls.org/en/django_start_project/> and follow along:
+
+### Make a new directory
+
+We've already created a django project before.  Just to illustrate that this is the case, try to run
+
+```
+django-admin startproject mysite .
+```
+
+It should complain about already having a site created.
+
+So make a new directory and re-run that command, as follows:
+
+```
+mkdir newsite
+django-admin startproject mysite newsite
+```
+
+This time the command works.  What is the difference in the two lines?  One uses a dot `.`, and the other uses the full directory name `newsite`.  Take a look in newsite:
+
+```
+ls -lrta newsite
+```
+
+Now delete newsite...we don't really need it
+
+```
+rm -r newsite
+```
+
+And while we're at it, let's get rid of the old manage.py:
+
+```
+rm manage.py
+```
+
+And then finally, create the new website right here (in the `.` directory) as instructed in the django_girls tutorial
+
+```
+django-admin startproject mysite .
+```
+
+
+### Follow along with tutorial to edit the "mysite" django site
+
+When you get to the part about databases, don't do what it says.  We're going to use the postgresql database, so your databases section should look like:
+
+```
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'HOST': 'db',
+        'PORT': 5432,
+    }
+}
+```
+
+
+
+## Models?
 
 After that work is done, move on to making models at <https://tutorial.djangogirls.org/en/django_models/>
+
+Hopefully we'll get through that as well.
