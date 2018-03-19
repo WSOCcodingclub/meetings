@@ -318,3 +318,7 @@ ready for prime time.
 
 Follow along the tutorial at
 <https://tutorial.djangogirls.org/en/django_admin/>
+
+Then, instead of going through the next two steps related to git and
+public hosting, skip ahead to
+<https://tutorial.djangogirls.org/en/django_urls/>
