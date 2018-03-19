@@ -37,7 +37,7 @@ Today we're going to sort that list of names that we displayed in the old progra
 2. open up `sorting_list.py` in the VSCode editor
 3. collaborate on sorting that list of names (alphabetically):
     girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
-    
+
 Think about how you would alphabetically sort that list in your head.  Try to write down exactly what your brain is doing.  That is an algorithm.  We'll turn that algorithm into code, and then see how well it does.
 
 ## Jan 29 2018
@@ -55,7 +55,7 @@ git remote add seagulsong https://github.com/seagulsong/Docker-Python
 ```
 git fetch seagulsong
 ```
-4. create a new branch in git for today's work.  
+4. create a new branch in git for today's work.
 ```
 git checkout -b sort_array
 ```
@@ -93,17 +93,17 @@ We used `cd`, `ls`, `ls -lrt`, `ls -lrta`, `ls -lR .git`
 
 #### git commands
 
-We used `git commit -a`, `git status`, `git checkout sortinglist.py` to erase our work, 
+We used `git commit -a`, `git status`, `git checkout sortinglist.py` to erase our work,
 `git remote add <name> <url>`, `git fetch`, `git cherry-pick`, and maybe some others.
 
 #### python code
 
-We used a for loop, and if statement, and comparison of strings using < (less than).  
+We used a for loop, and if statement, and comparison of strings using < (less than).
 We also wrote an infinite loop by having the hi() function call itself (recursion).
 
 #### ToDo items
 
-- [ ] bug the club members who haven't been coming to come.  
+- [ ] bug the club members who haven't been coming to come.
 - [ ] ask Lauren to add Emma K (username?), maybe others, to the WSOCcodingclub group
 
 # February 5, 2018
@@ -118,15 +118,15 @@ git clone https://github.com/jmarca/jupyter_notebook_intro
 
 Then switch into the newly created directory called "jupyter_notebook_intro" and read the README.
 
-Do the docker build step, but be warned, it takes a while to download. **Correction** See about copying from the USB flash drive to speed things up. If that doesn't work, then it might be faster to just do it on two or three machines and pair program.  
+Do the docker build step, but be warned, it takes a while to download. **Correction** See about copying from the USB flash drive to speed things up. If that doesn't work, then it might be faster to just do it on two or three machines and pair program.
 
 Saving a docker image to an output file is `docker image save -o <save image to path> <image name>`, while loading it back again on the target computer is `docker image load -i <path to image tar file>`.
 
 Launch the notebook, and follow along.
 
-# February 26, 2018 
+# February 26, 2018
 
-First day back after ski week :snowflake: :skier: :snowflake: :snowboarder: :snowflake: 
+First day back after ski week :snowflake: :skier: :snowflake: :snowboarder: :snowflake:
 
 ## Libraries:  os, glob, time
 
@@ -165,11 +165,11 @@ A unique feature to python is list comprehension (and dictionary comprehension) 
 
 Back to Django Girls Tutorial!
 
-With some python basics under our belt, time to get back to making a website.  
+With some python basics under our belt, time to get back to making a website.
 
 ## Open up the terminal
 
-Open the terminal program, and `cd` into the `django_docker` directory (or folder, if you prefer).  Fire up the docker environment by running 
+Open the terminal program, and `cd` into the `django_docker` directory (or folder, if you prefer).  Fire up the docker environment by running
 
 ```
 docker-compose up
@@ -256,3 +256,65 @@ DATABASES = {
 After that work is done, move on to making models at <https://tutorial.djangogirls.org/en/django_models/>
 
 Hopefully we'll get through that as well.
+
+(We did)
+
+# March 19, 2018
+
+This week the goal is to finish up the blog.  We're almost there.
+
+## Migrations
+
+Last week we did a lot of copy and paste, cargo-cult style
+programming.  All the details on what and why we did what we did are
+in the Django Girls tutorial and also in the Django documentation.
+One key concept that we glossed over that should be explained a bit
+more is the idea of a "migration".
+
+When we copy and paste the code to create the "Model", we created a
+blog entry with the following data items:
+
+```
+author
+title
+text
+created_date
+published_date
+```
+
+This model object is what the web server works with, but each of these
+elements is just a placeholder.  The *contents* of each of these has
+to be fetched from a database.  You don't just mix random authors and
+titles and so on, one blog post has a specific author, title, text,
+etc.  There can be many blog posts, and they all need to be saved and
+retrieved when needed.
+
+The "migrations" are instructions to the database to change its
+structure in order to handle the model.  The last steps in the models
+page of the tutorial that we ran last week was this:
+
+```
+python manage.py makemigrations blog
+```
+
+This *should* have created migration instructions in the file
+`blog/migrations/0001_initial.py`.  If you open that file up, you will
+see some stuff about dependencies and operations.  The details will be
+important later, but for now all you need to know is that this file is
+just a programmatically-generated program that will modify the
+database to create a table called "Post" with the fields we talked
+about, plus an `id` field.
+
+Then we actually "changed" the database with
+
+```
+python manage.py migrate blog
+```
+
+## Admin
+
+Today, we've got a little bit more spadework to do before the blog is
+ready for prime time.
+
+Follow along the tutorial at
+<https://tutorial.djangogirls.org/en/django_admin/>
