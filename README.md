@@ -322,3 +322,4 @@ Follow along the tutorial at
 Then, instead of going through the next two steps related to git and
 public hosting, skip ahead to
 <https://tutorial.djangogirls.org/en/django_urls/>
+and then <https://tutorial.djangogirls.org/en/django_views/>.
