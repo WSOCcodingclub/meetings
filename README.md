@@ -261,6 +261,10 @@ Hopefully we'll get through that as well.
 
 # March 19, 2018
 
+Video editing tools!  ffmpeg and friends
+
+# March 26, 2018
+
 This week the goal is to finish up the blog.  We're almost there.
 
 ## Migrations
